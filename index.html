@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourFirstName Restaurant App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matthew's Restaurant App</h1>
+        
+        <div class="menu-section">
+            <h2>Food</h2>
+            <select id="food-select">
+                <option value="spaghetti">Spaghetti</option>
+                <option value="fried-chicken">Fried Chicken</option>
+                <option value="burrito">Burrito</option>
+            </select>
+            <button onclick="addToOrder('food')">Add to Order</button>
+        </div>
+        
+        <div class="menu-section">
+            <h2>Drinks</h2>
+            <select id="drink-select">
+                <option value="water">Water</option>
+                <option value="sprite">Sprite</option>
+                <option value="ice-tea">Ice Tea</option>
+            </select>
+            <button onclick="addToOrder('drink')">Add to Order</button>
+        </div>
+        
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <select id="dessert-select">
+                <option value="ice-cream">Ice Cream</option>
+                <option value="cake">Cake</option>
+                <option value="donut">Donut</option>
+            </select>
+            <button onclick="addToOrder('dessert')">Add to Order</button>
+        </div>
+        
+        <div class="order-section">
+            <h2>Current Order: </h2>
+            <div id="order-items"></div>
+            <div id="order-total">Total: P0.00</div>
+            <button id="clearBtn" onclick="clearOrder()">Clear</button>
+            <button onclick="completeOrder()">OK</button>
+        </div>
+        
+        <div class="order-summary" id="order-summary" style="display: none;">
+            <h2>Order Summary: </h2>
+            <div id="summary-items"></div>
+            <div id="summary-total"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Matthew D. Delfin BSIT 4B</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
